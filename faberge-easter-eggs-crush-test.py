@@ -1,5 +1,6 @@
-def height(n: int, m: int):
-    # T(n, m) = T(n - 1, m - 1) + 1 + T(n, m - 1)
+def height(n: int, m: int) -> int:
+    # Recurrence relation:
+    # F(n, m) = F(n - 1, m - 1) + 1 + F(n, m - 1)
     
     if n == 0 or m == 0:
         return 0
